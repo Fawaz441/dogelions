@@ -17,6 +17,18 @@ const flightPath = {
 
 const tween = new TimelineLite();
 tween.add(
+  TweenLite.to(".body-wrapper", {
+    opacity: 1,
+    y: 0,
+  })
+);
+tween.add(
+  TweenLite.to(".calendar", {
+    opacity: 1,
+    y: 0,
+  })
+);
+tween.add(
   TweenLite.to(".floating-img", 1, {
     bezier: flightPath,
     ease: Power1.easeInOut,

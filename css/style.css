@@ -541,7 +541,6 @@ header.nav-new .navbar {
     background-position: center;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 100vh;
 }
 
 .abt-shap1 {
@@ -957,7 +956,7 @@ header.nav-new .navbar {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #BDB9B9;
+    color: #fff;
     margin: 0 0 20px;
 }
 
@@ -1410,4 +1409,14 @@ body {
 #rocket-svg {
     top: 2300px;
     left: 0;
+}
+
+.body-wrapper {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.calendar {
+    opacity: 0;
+    transform: translateY(-20px);
 }
