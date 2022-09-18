@@ -1420,3 +1420,24 @@ body {
     opacity: 0;
     transform: translateY(-20px);
 }
+
+.relative {
+    position: relative;
+}
+
+.shooting-fire {
+    position: absolute;
+    left: 0;
+    height: 200px
+}
+
+.fire11 {
+    top: 20
+}
+
+/* .floating-rocket {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+} */

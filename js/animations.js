@@ -122,3 +122,17 @@ floatingPlanets.forEach((planet) => {
     duration: 100,
   });
 });
+
+TweenLite.to([".fire10", ".fire11"], {
+  x: 10 * window.innerWidth,
+  y: 20,
+  duration: 3,
+  repeat: -1,
+});
+
+TweenLite.to(".fire12", {
+  x: -10 * window.innerWidth,
+  y: 100,
+  duration: 3,
+  repeat: -1,
+});
