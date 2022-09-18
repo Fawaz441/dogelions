@@ -70,3 +70,43 @@ const runAnimations = () => {
 };
 
 runAnimations();
+
+var body = document.body,
+  html = document.documentElement;
+
+var height = Math.max(
+  body.scrollHeight,
+  body.offsetHeight,
+  html.clientHeight,
+  html.scrollHeight,
+  html.offsetHeight
+);
+
+const floatingPlanets = document.querySelectorAll(".floating-planet > image");
+
+const svgs = [
+  "#fire3",
+  "#fire2",
+  "#fire4",
+  "#fire1",
+  "#fire5",
+  "#planet2",
+  "#planet1",
+  "#rocket",
+];
+
+svgs.forEach((svg) => {
+  TweenLite.to(svg, {
+    y: Math.random() * height,
+    x: Math.random() * window.innerWidth,
+    duration: 100,
+  });
+});
+
+floatingPlanets.forEach((planet) => {
+  TweenLite.to(planet, {
+    y: Math.random() * height,
+    x: Math.random() * window.innerWidth,
+    duration: 100,
+  });
+});

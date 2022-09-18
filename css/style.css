@@ -27,6 +27,11 @@ img {
     display: block;
 }
 
+
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
@@ -1333,4 +1338,76 @@ body {
     top: 0;
     z-index: -1;
     height: 150px;
+}
+
+#fire1-svg,
+#fire2-svg,
+#fire3-svg,
+#fire4-svg,
+#fire5-svg,
+#planet1-svg,
+#planet2-svg,
+.floating-planet,
+#rocket-svg {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    /* pointer-events: none; */
+}
+
+#fire1-svg>image,
+#fire2-svg>image,
+#fire3-svg>image,
+#fire4-svg>image,
+#fire5-svg>image,
+#planet1-svg>image,
+.floating-planet>image,
+#planet2-svg>image,
+#rocket-svg>image {
+    z-index: 10000;
+}
+
+#fire1-svg {
+    top: 200px;
+    left: 0;
+}
+
+.floating-planet {
+    left: 20px;
+    top: 0;
+}
+
+#fire2-svg {
+    top: 500px;
+    left: 200px;
+}
+
+#fire3-svg {
+    top: 800px;
+    left: 0;
+}
+
+#fire4-svg {
+    top: 2000px;
+    left: 0;
+}
+
+#fire5-svg {
+    top: 2200px;
+    left: 0;
+}
+
+#planet1-svg {
+    top: 1000px;
+    left: 0;
+}
+
+#planet2-svg {
+    top: 1500px;
+    left: 0;
+}
+
+#rocket-svg {
+    top: 2300px;
+    left: 0;
 }
