@@ -112,6 +112,9 @@ svgs.forEach((svg) => {
     y: Math.random() * height,
     x: Math.random() * window.innerWidth,
     duration: 100,
+    yoyo: true,
+    ease: "power1.easeInOut",
+    repeat: -1,
   });
 });
 
@@ -120,6 +123,9 @@ floatingPlanets.forEach((planet) => {
     y: Math.random() * height,
     x: Math.random() * window.innerWidth,
     duration: 100,
+    ease: "power1.easeInOut",
+    yoyo: true,
+    repeat: -1,
   });
 });
 
@@ -128,11 +134,46 @@ TweenLite.to([".fire10", ".fire11"], {
   y: 20,
   duration: 3,
   repeat: -1,
+  yoyo: true,
+  ease: "power1.easeInOut",
 });
 
 TweenLite.to(".fire12", {
   x: -10 * window.innerWidth,
   y: 100,
   duration: 3,
+  repeat: -1,
+  yoyo: true,
+  ease: "power1.inOut",
+});
+
+TweenLite.to(".planet-1", {
+  x: 1000,
+  y: 4000,
+  duration: 10,
+  x: window.innerWidth,
+  ease: "power1.inOut",
+  yoyo: true,
+  repeat: -1,
+  rotate: 300,
+});
+
+TweenLite.to(".planet-2", {
+  x: 0,
+  y: 1000,
+  duration: 10,
+  x: 200,
+  ease: "power1.inOut",
+  yoyo: true,
+  repeat: -1,
+});
+
+TweenLite.to(".star", {
+  x: 0,
+  y: 100,
+  duration: 10,
+  x: 200,
+  ease: "power1.inOut",
+  yoyo: true,
   repeat: -1,
 });
